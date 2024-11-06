@@ -1,0 +1,7 @@
+
+
+- name: Setup database demo host
+  hosts: all
+
+  roles:
+    - name: geerlingguy.postgresql
