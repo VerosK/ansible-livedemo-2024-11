@@ -12,6 +12,8 @@ postgresql_users:
   - name: viewer
     password: very-secret
     state: present
+  - name: foo
+    state: absent
 
 postgresql_databases:
   - name: demo
