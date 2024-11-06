@@ -1,0 +1,9 @@
+# requirements.yml
+
+# you can download roles using:
+#
+# ansible-galaxy install -p roles -r requirements.yml
+
+roles:
+  - name: geerlingguy.postgresql
+    version: 3.5.0
