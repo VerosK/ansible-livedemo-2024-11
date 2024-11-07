@@ -12,3 +12,5 @@ apache_vhosts:
         AllowOverride All
         Require all granted
       </Directory>
+
+apache_remove_default_vhost: true
