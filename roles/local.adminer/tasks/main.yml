@@ -1,0 +1,13 @@
+# tasks/main.yml
+
+- name: Create adminer dir
+  file:
+    path: '{{ adminer_dir }}'
+    state: directory
+
+- name: Get adminer source
+  get_url:
+    url: '{{ adminer_source_url }}'
+    dest: '{{ adminer_dir }}/index.php'
+    mode: 0644
+    checksum: '{{ adminer_checksum }}'

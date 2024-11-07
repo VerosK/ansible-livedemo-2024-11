@@ -10,3 +10,5 @@
       tags: php
     - name: geerlingguy.postgresql
       tags: postgresql
+    - name: local.adminer
+      tags: adminer
