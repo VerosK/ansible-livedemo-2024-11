@@ -4,4 +4,6 @@
   hosts: all
 
   roles:
+    - name: geerlingguy.apache
+    - name: geerlingguy.php
     - name: geerlingguy.postgresql
