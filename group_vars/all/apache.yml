@@ -6,6 +6,10 @@ apache_vhosts:
     # map /adminer/ na /opt/adminer-.../index.php
     extra_parameters: |
       
+       <FilesMatch "index\.php$">
+        SetHandler "proxy:fcgi://localhost:9000"
+      </FilesMatch>
+      
       Alias /adminer/ {{ adminer_dir }}/index.php
       <Directory {{ adminer_dir }}>
         DirectoryIndex index.php
